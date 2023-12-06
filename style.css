@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+select,
+textarea {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #E5E5E5;
+}
+
+body::before {
+  content: '';
+  width: 100vw;
+  height: 436px;
+  background: #535971;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#page {
+  width: 750px;
+  margin: 0 auto;
+}
+
+header {
+  width: 417px;
+  margin: 147px 0 58px 0;
+}
+
+h1 {
+  font-family: Staatliches;
+  font-size: 48px;
+  font-weight: 400;
+  color: #FFF;
+}
+
+header p {
+  font-size: 20px;
+  color: #FFF;
+}
+
+#my-form{
+  min-height: 300px;
+  padding: 64px;
+  background: #ffffff;
+  border-radius: 20px 20px 0px 0px;
+}

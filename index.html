@@ -19,8 +19,85 @@
     </header>
 
     <form id="my-form">
-      
+      <fieldset class="cluster">
+        <section class="fieldset-wrapp">
+          <legend>Informações pessoais</legend>
+          <div class="box-wrapp">
+            <div class="field-wrapp">
+              <label for="firstname">Nome</label>
+              <input type="text" id="firstname">
+            </div>
+            <div class="field-wrapp">
+              <label for="surname">Sobrenome</label>
+              <input type="text" id="surname">
+            </div>
+          </div>
+          <div class="field-wrapp">
+            <label for="email-input">Email <span>(digite um email válido)</span></label>
+            <input type="email" id="email-input">
+          </div>
+          <div class="field-wrapp">
+            <label for="password-input">Senha <span>(mínimo de 6 caracteres)</span></label>
+            <input type="password" id="password-input" minlength="6">
+          </div>
+        </section>
+      </fieldset>
+
+      <fieldset class="cluster">
+        <section class="fieldset-wrapp">
+          <legend>Informações do mentor</legend>
+          <div class="field-wrapp">
+            <label for="mentor">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+            <input type="text" id="mentor-input">
+          </div>
+        </section>
+      </fieldset>
+
+      <fieldset class="cluster">
+        <section class="fieldset-wrapp">
+          <legend>Seus horários disponíveis</legend>
+          <section class="box-mentoring">
+            <h4>Primeira mentoria</h4>
+            <div class="box-date-wrapp">
+              <div class="field-date-wrapp">
+                <label for="schedule-date-one">Data<span>(DD/MM/AAAA)</span></label>
+                <input type="date" id="schedule-date-one">
+              </div>
+              <div class="field-date-wrapp">
+                <label for="begin-one">Das</label>
+                <input type="time" id="begin-one">
+              </div>
+              <div class="field-date-wrapp">
+                <label for="end-one">Até</label>
+                <input type="time" id="end-one">
+              </div>
+            </div>
+          </section>
+          <section class="box-mentoring">
+            <h4>Segunda mentoria</h4>
+            <div class="box-date-wrapp">
+              <div class="field-date-wrapp">
+                <label for="schedule-date-two">Data<span>(DD/MM/AAAA)</span></label>
+                <input type="date" id="schedule-date-two">
+              </div>
+              <div class="field-date-wrapp">
+                <label for="begin-two">Das</label>
+                <input type="time" id="begin-two">
+              </div>
+              <div class="field-date-wrapp">
+                <label for="end-two">Até</label>
+                <input type="time" id="end-two">
+              </div>
+            </div>
+          </section>
+        </section>
+      </fieldset>
     </form>
+    <footer>
+      <button form="my-form">
+          SALVAR
+      </button>
+    </footer>
   </div>
 </body>
 

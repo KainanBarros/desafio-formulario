@@ -11,6 +11,13 @@ textarea {
   font-family: 'Poppins', sans-serif;
 }
 
+legend,
+button,
+h1,
+h4{
+  font-family: Staatliches;
+}
+
 body {
   background: #E5E5E5;
 }
@@ -37,7 +44,6 @@ header {
 }
 
 h1 {
-  font-family: Staatliches;
   font-size: 48px;
   font-weight: 400;
   color: #FFF;
@@ -48,9 +54,120 @@ header p {
   color: #FFF;
 }
 
-#my-form{
+#my-form {
   min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   padding: 64px;
   background: #ffffff;
   border-radius: 20px 20px 0px 0px;
 }
+
+#my-form label {
+  color: #4E4958;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.cluster {
+  border: none;
+}
+
+.fieldset-wrapp {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.fieldset-wrapp legend {
+  color: #535971;
+  font-size: 24px;
+  line-height: 34px;
+  border-bottom: 1px solid #E6E6F0;
+  padding-bottom: 10px;
+  margin-bottom: 16px;
+}
+
+.field-wrapp {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.field-wrapp input, .field-date-wrapp input{
+  height: 56px;
+  color: #7e7e7e;
+  border-radius: 8px;
+  border: 1px solid #E6E6F0;
+  background: #FAFAFC;
+  margin-top: 8px;
+  padding: 8px;
+}
+
+.box-wrapp {
+  display: flex;
+  gap: 22px;
+}
+
+.field-wrapp label span, .field-date-wrapp label span {
+  color: #C1BCCC;
+  font-size: 12px;
+  line-height: 20px;
+  margin-left: 10px;
+}
+
+.field-wrapp label span:hover{
+  color: #000000b2;
+}
+
+.box-mentoring h4{
+  color: #535971;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+  margin-bottom: 10px;
+}
+ 
+.field-date-wrapp{
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-mentoring > .box-date-wrapp >div:nth-child(1){
+  width: 300px;
+  margin-right: 22px;
+}
+
+.box-date-wrapp{
+  display: flex;
+  gap: 10px;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  background: #535971;
+  margin-bottom: 100px;
+  padding: 50px 71px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+footer button{
+  height: 57px;
+  font-size: 20px;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  background: #FF5374;
+}
+
+footer button:hover{
+  background: #fd6e8a;
+}
+
+
+
+
+
